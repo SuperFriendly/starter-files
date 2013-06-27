@@ -29,15 +29,16 @@ body:after { content: 'mini'; display: none; }
     Base     
 -------------------------------------------*/
 * { margin: 0; padding: 0; }
+html { font-size: 62.5%; } /* for rems */
 body { font: normal 62.5%/1.5 Helvetica, Arial, sans-serif; color: #333; }
 
 
 /* block level */
 
-h1 { font: bold 42px Helvetica, Arial, sans-serif; margin: 0 0 1em; }
-h2 { font: bold 18px Helvetica, Arial, sans-serif; margin: 0 0 1em; }
-h3 { font: bold 15px Helvetica, Arial, sans-serif; margin: 0 0 1em; }
-h4, h5, h6 { font: bold 12px Helvetica, Arial, sans-serif; margin: 0 0 1em; }
+h1, .h1 { font: bold 4.2rem Helvetica, Arial, sans-serif; margin: 0 0 0.5em; }
+h2, .h2 { font: bold 1.8rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
+h3, .h3 { font: bold 1.5rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
+h4, h5, h6, .h4, .h5, .h6 { font: bold 1.2rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 
 p, ul, dl, ol, table { font-size: 16px; margin: 0 0 1.5em; }
 
@@ -45,14 +46,14 @@ form { margin: 0 0 1.5em; }
 
 /* inline */
 
-label { color: #6280a1; text-transform: uppercase; font: normal 14px 'Trebuchet MS', Arial, sans-serif; }
-input, select, textarea { font-family: 'Trebuchet MS', Arial, sans-serif; }
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: rgba(0, 0, 0, 0.5); font-weight: 400; }
+label { font-size: 1.6rem; }
+input, select, textarea {  }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { }
 input.empty::-webkit-input-placeholder, textarea.empty::-webkit-input-placeholder { color: red; }
 input.empty:-moz-placeholder, textarea.empty:-moz-placeholder { color: red; }
 .error { color: red; }
 
-table { border-bottom: 1px solid #aaa; }
+table { }
     td { padding: 0.25em 1em; border-top: 1px solid #aaa; }
 
 em { font-style: italic; }
@@ -62,8 +63,8 @@ mark { background: none; font-style: normal; }
 
 video { width: 100%; height: auto; }
 
-a { text-decoration: none; .transition(all, 0.25s, linear); color: #fff; }
-a:hover, a:focus { color: #5b99ee; }
+a { text-decoration: none; .transition(all, 0.25s, linear); }
+a:hover, a:focus { color: red; }
 
 img { display: block; margin: 0 10px 10px 0; max-width: 100%; }
 
@@ -74,7 +75,7 @@ b { font-weight: normal; }
 
 abbr, abbr[title], acronym { font-size: 75%; letter-spacing: 0.2em; text-transform: uppercase; border: none; }
 
-code { font: 13px/1 Consolas, 'Courier New', Courier, monospace; color: #999; }
+code { font: 1.4rem/1 Consolas, 'Courier New', Courier, monospace; color: #999; }
 
 sub, sup { line-height: 0; }
 
@@ -104,7 +105,7 @@ sub, sup { line-height: 0; }
 
 .bulleted { list-style: disc; }
 
-.uc { text-transform: uppercase; }
+.uppercase { text-transform: uppercase; }
 
 .rwd-break { display: block; }
 
@@ -117,56 +118,5 @@ sub, sup { line-height: 0; }
 
 
 /*-------------------------------------------    
-	Header
+	Page Specific
 -------------------------------------------*/
-.wrap { background: #fff url(/-/i/supes-mini.jpg) no-repeat center 95%; padding: 0 0 380px; }
-@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-    .wrap { background-image: url(/-/i/supes-mini-retina.jpg); background-size: 320px 386px; }
-}
-    
-
-.masthead { padding-top: 4em; width: 95%; margin: 0 auto; max-width: 225px;
-    h1 { color: #024fdc; line-height: 0.9; position: relative; 
-        strong, a { color: #ef0611; } 
-        a { /*border-bottom: 3px solid #ef0611; */ position: relative; display: inline-block;
-            /*&:hover, &:focus { color: #ff5a00; border-color: #000; }*/
-            &:before { content: ''; display: inline-block; width: 100%; height: 3px; background: #ef0611; position: absolute; left: 0; bottom: -3px; }
-            &:hover, &:focus { color: #ff5a00; }
-            &:hover:before { background-color: #eee; }
-        }
-    }
-}
-    .line { display: block; }
-    #line1 { font-size: 34px; }
-    #line2 { font-size: 74px; }
-    #line3 { font-size: 70px; }
-    #line4 { font-size: 82px; }
-    #line5 { position: absolute; background-image: url(/-/i/heart.png); width: 68px; height: 59px; }
-    #line6 { font-size: 19px; position: relative; left: 32px; top: 11px; }
-    #line7 { font-size: 18px; position: relative; left: 25px; top: 28px; }
-    
-
-.fb-like-wrap { width: 225px; margin: 0 auto 3em; }
-
-
-/*-------------------------------------------    
-	Footer
--------------------------------------------*/
-
-.past { padding: 3em 2.5% 5em; }
-
-.nav-heading { font-size: 22px; }
-
-.years li { color: #37425a; font-size: 24px; text-align: center;
-    li { font-size: 16px; } 
-}
-.main-item { float: left; width: 33%; 
-    & > a { display: block; } 
-}
-
-.down-arrow { width: 0; height: 0; border-left: 5px solid transparent;	border-right: 5px solid transparent; border-top: 5px solid #808b9e; position: absolute; right: 15%; top: 0.65em; }
-.dropdown-control { position: relative; }
-
-.dropdown { margin: 1em 0; width: 100%; 
-    a { display: block; padding: 0.5em 0; }
-}
