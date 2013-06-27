@@ -12,16 +12,24 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <!-- Facebook stuff -->    
+        <meta property="og:title" content="SuperFriendly: Defeating apathy and the forces of evil" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://superfriend.ly/" />
+        <meta property="og:image" content="http://superfriend.ly/i/superfriendly-badge.png" />
+        <meta property="og:site_name" content="SuperFriendly" />
+        <meta property="og:description" content="Defeating apathy and the forces of evil." />
+
         <link rel="stylesheet" href="/-/c/base.css" />
+        <!-- <script>document.write('<link rel="stylesheet" href="/-/c/enhanced.css" />');</script> -->
     
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        
+        
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/-/j/libs/jquery-1.9.1.min.js"><\/script>')</script>
