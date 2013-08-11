@@ -1,14 +1,3 @@
-/*
-*************************************************
-
-PROJECT NAME
-General Screen Styles
-
-Created by the epic SuperFriendly team.
-http://superfriend.ly/
-
-*************************************************
-*/
 
 
 /*-------------------------------------------    
@@ -63,7 +52,7 @@ mark { background: none; font-style: normal; }
 
 video { width: 100%; height: auto; }
 
-a { text-decoration: none; .transition(all, 0.25s, linear); }
+a { text-decoration: none; /*.transition(all, 0.25s, linear);*/ }
 a:hover, a:focus { color: red; }
 
 img { display: block; margin: 0 10px 10px 0; max-width: 100%; }
@@ -81,42 +70,3 @@ sub, sup { line-height: 0; }
 
 ::selection { background: #2a69c2; color: #fff; }
 ::-moz-selection { background: #2a69c2; color: #fff; }
-
-
-/*-------------------------------------------    
-    Global
--------------------------------------------*/
- 
-/* Phark Image Replacement - http://phark.typepad.com/phark/2003/08/accessible_imag.html */
-.phark { display: block; text-indent: -9999px; background-position: 0 0; background-repeat: no-repeat; background-color: transparent; }
-
-/* Trimming Outline in Firefox - http://snook.ca/archives/html_and_css/trimming_long_o  */
-/*\*/ .phark-link { overflow: hidden; } /**/
-
-/* Easy Clearing - http://www.positioniseverything.net/easyclearing.html */ 
-.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-
-.offscreen { position: absolute; left: -9999px; display: block; }
-.onscreen { left: 0; }
-
-.hide { display: none; }
-
-.no-bullets { list-style: none; }
-
-.bulleted { list-style: disc; }
-
-.uppercase { text-transform: uppercase; }
-
-.rwd-break { display: block; }
-
-/*-------------------------------------------    
-	Modules
--------------------------------------------*/
-
-
-
-
-
-/*-------------------------------------------    
-	Page Specific
--------------------------------------------*/
