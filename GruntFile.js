@@ -72,10 +72,12 @@ module.exports = function(grunt) {
 	//grunt.loadNpmTasks('grunt-contrib-uglify');
 	//grunt.loadNpmTasks('grunt-contrib-concat');
 	//grunt.loadNpmTasks('grunt-embed');
+	//grunt.loadNpmTasks('grunt-criticalcss');
 
 	// Task configuration
 	//grunt.registerTask('default', ['sass', 'concat', 'uglify', 'embed', 'watch']);
 	//grunt.registerTask('default', ['sass', 'embed', 'watch']);
+	//grunt.registerTask('default', ['sass', 'watch', 'criticalcss']);
 	grunt.registerTask('default', ['sass', 'watch']);
 
 }
