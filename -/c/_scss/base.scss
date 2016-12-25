@@ -1,0 +1,205 @@
+
+
+/*-------------------------------------------    
+    Fonts     
+-------------------------------------------*/
+
+
+
+/*-------------------------------------------    
+    Flag
+	(Thanks Jeremy: http://adactio.com/journal/5429/)
+-------------------------------------------*/
+body:after { 
+	content: 'mini'; 
+	display: none; 
+}
+
+
+
+/*-------------------------------------------    
+    Base     
+-------------------------------------------*/
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+
+html { 
+	font-size: 62.5%; /* for rems */
+} 
+
+body { 
+	font: normal 62.5%/1.5 Helvetica, Arial, sans-serif; 
+	color: #333; 
+}
+
+
+
+/* block level */
+
+h1, 
+.h1 { 
+	font: bold 42px Helvetica, Arial, sans-serif; 
+	font-size: 4.2rem;
+	margin: 0 0 0.5em; 
+}
+
+h2, 
+.h2 { 
+	font: bold 18px Helvetica, Arial, sans-serif; 
+	font-size: 1.8rem;
+	margin: 0 0 1em; 
+}
+
+h3, 
+.h3 { 
+	font: bold 15px Helvetica, Arial, sans-serif; 
+	font-size: 1.5rem;
+	margin: 0 0 1em; 
+}
+
+h4, 
+h5, 
+h6, 
+.h4, 
+.h5, 
+.h6 { 
+	font: bold 12px Helvetica, Arial, sans-serif; 
+	font-size: 1.2rem;
+	margin: 0 0 1em; 
+}
+
+p, 
+ul, 
+dl, 
+ol, 
+table { 
+	font-size: 16px; 
+	font-size: 1.6rem;
+	margin: 0 0 1.5em; 
+}
+
+form { 
+	margin: 0 0 1.5em; 
+}
+
+
+
+/* inline */
+
+label { 
+	font-size: 16px;
+	font-size: 1.6rem; 
+}
+
+input, 
+select, 
+textarea {  
+
+}
+
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder { 
+
+}
+
+input.empty::-webkit-input-placeholder, 
+textarea.empty::-webkit-input-placeholder { 
+	color: red; 
+}
+
+input.empty:-moz-placeholder, 
+textarea.empty:-moz-placeholder { 
+	color: red; 
+}
+
+.error { 
+	color: red; 
+}
+
+table { 
+
+}
+    
+    td { 
+    	padding: 0.25em 1em; 
+    	border-top: 1px solid #aaa; 
+    }
+
+
+em { 
+	font-style: italic; 
+}
+
+strong { 
+	font-weight: bold; 
+}
+
+mark { 
+	background: none; 
+	font-style: normal; 
+}
+
+video { 
+	width: 100%; 
+	height: auto; 
+	max-width: 100%;
+}
+
+a { 
+	text-decoration: none; 
+	/*.transition(all, 0.25s, linear);*/ 
+}
+
+a:hover, 
+a:focus { 
+	color: red; 
+}
+
+img { 
+	display: block; 
+	margin: 0 10px 10px 0; 
+	max-width: 100%; 
+}
+
+a img { 
+	border: none; 
+}
+
+i { 
+	font-style: normal; 
+}
+
+b { 
+	font-weight: normal; 
+}
+
+abbr, 
+abbr[title], 
+acronym { 
+	font-size: 75%; 
+	letter-spacing: 0.2em; 
+	text-transform: uppercase; 
+	border: none; 
+}
+
+code { 
+	font: 1.4rem/1 Consolas, 'Courier New', Courier, monospace; 
+	color: #999; 
+}
+
+sub, 
+sup { 
+	line-height: 0; 
+}
+
+::selection { 
+	background: #2a69c2; 
+	color: #fff; 
+}
+
+::-moz-selection { 
+	background: #2a69c2; 
+	color: #fff; 
+}
