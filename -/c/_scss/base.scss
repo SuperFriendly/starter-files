@@ -29,8 +29,16 @@ html {
 	font-size: 62.5%; /* for rems */
 } 
 
+/* Thanks, Paul Irish! https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+ 	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+ 	box-sizing: inherit;
+}
+
 body { 
-	//font: normal 62.5%/1.5 Helvetica, Arial, sans-serif; 
 	font: normal 62.5%/1.5 $mainFontStack;
 	color: #333; 
 }

@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 				},
 			  	files: {                         // Dictionary of files
 			    	'-/c/main.css'			: 	'-/c/_scss/main.scss'       // 'destination': 'source'
-			    	//'/-/c/littleboxchallenge-enhanced.css'	: 	'www/-/c/_scss/enhanced.scss',       // 'destination': 'source'
+			    	//'/-/c/project-enhanced.css'	: 	'www/-/c/_scss/enhanced.scss',       // 'destination': 'source'
 			    	//'/-/c/ie.css'			: 	'www/-/c/_scss/ie.scss'       // 'destination': 'source'
 			  	}
 			}
@@ -34,14 +34,14 @@ module.exports = function(grunt) {
 		            'www/-/j/_source/*.js' // All JS in the _source folder		            
 		            //'js/global.js'  // This specific file
 		        ],
-		        dest: 'www/-/j/littleboxchallenge.js'
+		        dest: 'www/-/j/project.js'
 		    }
 		},*/
 
 		/*uglify: {
 		    build: {
-		        src: 'www/-/j/littleboxchallenge.js',
-		        dest: 'www/-/j/littleboxchallenge.min.js'
+		        src: 'www/-/j/project.js',
+		        dest: 'www/-/j/project.min.js'
 		    }
 		},*/
 
