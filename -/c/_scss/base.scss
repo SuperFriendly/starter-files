@@ -30,7 +30,8 @@ html {
 } 
 
 body { 
-	font: normal 62.5%/1.5 Helvetica, Arial, sans-serif; 
+	//font: normal 62.5%/1.5 Helvetica, Arial, sans-serif; 
+	font: normal 62.5%/1.5 $mainFontStack;
 	color: #333; 
 }
 
@@ -40,22 +41,19 @@ body {
 
 h1, 
 .h1 { 
-	font: bold 42px Helvetica, Arial, sans-serif; 
-	font-size: 4.2rem;
+	@extend .dm-u-heading--xxl;
 	margin: 0 0 0.5em; 
 }
 
 h2, 
 .h2 { 
-	font: bold 18px Helvetica, Arial, sans-serif; 
-	font-size: 1.8rem;
+	@extend .dm-u-heading--xl;
 	margin: 0 0 1em; 
 }
 
 h3, 
 .h3 { 
-	font: bold 15px Helvetica, Arial, sans-serif; 
-	font-size: 1.5rem;
+	@extend .dm-u-heading--l;
 	margin: 0 0 1em; 
 }
 
@@ -65,8 +63,7 @@ h6,
 .h4, 
 .h5, 
 .h6 { 
-	font: bold 12px Helvetica, Arial, sans-serif; 
-	font-size: 1.2rem;
+	@extend .dm-u-heading--m;
 	margin: 0 0 1em; 
 }
 
@@ -75,9 +72,13 @@ ul,
 dl, 
 ol, 
 table { 
-	font-size: 16px; 
-	font-size: 1.6rem;
+	@extend .dm-u-text--s;
 	margin: 0 0 1.5em; 
+}
+
+ul,
+ol {
+	margin-left: ($spacing * 3) + px;
 }
 
 form { 
@@ -89,8 +90,7 @@ form {
 /* inline */
 
 label { 
-	font-size: 16px;
-	font-size: 1.6rem; 
+	@extend .dm-u-text--s;
 }
 
 input, 

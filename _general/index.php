@@ -27,6 +27,40 @@
     <h6>Heading 6</h6>
 
 
+
+
+    <!-- ========= Fake Headings ======== -->
+
+    <h1 class="dm-u-heading--xxl">Fake Heading 1</h1>
+
+    <h1 class="dm-u-heading--xl">Fake Heading 2</h1>
+
+    <h1 class="dm-u-heading--l">Fake Heading 3</h1>
+
+    <h1 class="dm-u-heading--m">Fake Heading 4</h1>
+
+    <h1 class="dm-u-heading--s">Fake Heading 5</h1>
+
+    <h1 class="dm-u-heading--xs">Fake Heading 6</h1>
+
+
+
+
+    <!-- ========= Resizing Text ======== -->
+
+    <p class="dm-u-text--xxl">Resizing Text 1</p>
+
+    <p class="dm-u-text--xl">Resizing Text 1</p>
+
+    <p class="dm-u-text--l">Resizing Text 2</p>
+
+    <p class="dm-u-text--m">Resizing Text 3</p>
+
+    <p class="dm-u-text--s">Resizing Text 4</p>
+
+    <p class="dm-u-text--xs">Resizing Text 5</p>
+
+
     <!-- ========= Generic Content Elements (Block Level) ======== -->
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -36,7 +70,7 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-    <p><img src="http://placekitten.com/400/400" alt="Kitty" /></p>
+    <p><img src="http://placekitten.com/400/300" alt="Kitty" /></p>
 
     <ul>
     	<li>Unordered List Item 1</li>
